@@ -2,14 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import Home from './Pages/HomePage/Home'
+import About from './Pages/About/about'
+import { Routes, Route, Navigate } from 'react-router-dom' 
+import '@coreui/coreui/dist/css/coreui.min.css'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='font-bold text-8xl text-center'>Razzak</h1>
+    <Navbar></Navbar>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/*" element={<Navigate to="/" />} />
+
+
+
+    </Routes>
     </>
+    
   )
 }
 
