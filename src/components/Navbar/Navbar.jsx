@@ -27,7 +27,7 @@ const Navbar = () => {
       <CContainer fluid>
         
         <CNavbarBrand href="#"><img className='h-10 w-10' src={Logo01} alt="" /></CNavbarBrand>
-        <CNavbarBrand href="#">SEM Ltd.</CNavbarBrand>
+        <CNavbarBrand href="#">ঘরের কাজ Ltd.</CNavbarBrand>
         <CNavbarToggler onClick={() => setVisible(!visible)} />
         <CCollapse className="navbar-collapse" visible={visible}>
           <CNavbarNav className="me-auto">
