@@ -1,0 +1,26 @@
+.pricing {
+  padding: 5px 0;
+  background-color: #f8f9fa;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.pricing-card.featured {
+  transform: scale(1.05);
+  border: 2px solid #4e73df;
+}
