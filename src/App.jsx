@@ -7,6 +7,7 @@ import Home from './Pages/HomePage/Home'
 import About from './Pages/About/about'
 import { Routes, Route, Navigate } from 'react-router-dom' 
 import '@coreui/coreui/dist/css/coreui.min.css'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -23,6 +24,8 @@ function App() {
 
 
     </Routes>
+
+    <Footer/>
     </>
     
   )
